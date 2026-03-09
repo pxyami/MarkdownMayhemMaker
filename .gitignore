@@ -1,0 +1,16 @@
+# PyCharm IDE 설정 폴더
+.idea/
+
+# 가상 환경 폴더
+.venv/
+venv/
+env/
+
+# 파이썬 컴파일 및 캐시 파일
+__pycache__/
+*.py[cod]
+*$py.class
+
+# 운영체제 자동 생성 파일 (맥OS나 윈도우에서 생길 수 있는 파일)
+.DS_Store
+Thumbs.db
