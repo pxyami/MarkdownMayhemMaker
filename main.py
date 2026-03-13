@@ -1,10 +1,18 @@
 import sys
+import os
 from PyQt5.QtWidgets import *
 from PyQt5 import uic
 import makeSpam
 
+#경로 동적으로 찾기
+def path_resource(path_relative):
+    path_base = getattr(sys, '_MEIPASS', os.path.dirname(os.path.abspath(__file__)))
+    return os.path.join(path_base, path_relative)
+
+
 #Ui파일 가져오기
-form_class = uic.loadUiType(".\\ui\\Spammer1_1.ui")[0]
+path_ui = path_resource(".\\ui\\Spammer1_1.ui")
+form_class = uic.loadUiType(path_ui)[0]
 
 #Ui Class 선언
 class WindowClass(QWidget, form_class):
