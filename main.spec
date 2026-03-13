@@ -3,10 +3,11 @@
 block_cipher = None
 
 added_files = [('./makeSpam.py', '.'),
-               ('./ui/*', './ui')]
+               ('./ui/*', './ui'),
+               ('./ico/*', './ico')]
 
 a = Analysis(['main.py'],
-            pathex=['C:\\Users\\i\\PycharmProjects\\MarkdownMayhemMaker'],
+            pathex=['.'],
             binaries=[],
             datas=added_files,
             hiddenimports=[],
@@ -33,4 +34,4 @@ exe = EXE(pyz,
         runtime_tmpdir=None,
         console=False,
         uac_admin=False,
-        icon='')
+        icon='./ico/icon1.ico')
