@@ -1,5 +1,4 @@
-# MMM: Markdown Mayhem Maker
-This makes messy, chaotic strings using markdown header.
+Makes messy, chaotic strings using markdown header.
 
 ![img.png](images/readme/img.png)
 ___
